@@ -1,0 +1,20 @@
+# Application configuration.
+
+application: prototask-example
+version: 0-0-0
+runtime: python27
+api_version: 1
+threadsafe: true
+default_expiration: "365d"
+
+handlers:
+
+- url: .*
+  script: main.application
+
+libraries:
+- name: webapp2
+  version: "2.5.1"
+
+builtins:
+- remote_api: on
