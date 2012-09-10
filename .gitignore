@@ -1,3 +1,6 @@
+# OSX generated files
+.DS_Store
+
 *.py[co]
 
 # Packages
